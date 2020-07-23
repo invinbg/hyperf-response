@@ -1,5 +1,12 @@
 {
     "name": "invinbg/hyperf-response",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "swoole",
+        "hyperf",
+        "response"
+    ],
     "require": {
         "php": ">=7.2",
         "hyperf/contract": "~2.0.0",
