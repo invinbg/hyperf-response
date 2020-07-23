@@ -5,3 +5,4 @@
 .git/
 .DS_Store
 *.lock
+/vendor
