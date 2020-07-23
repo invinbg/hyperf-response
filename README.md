@@ -1,5 +1,4 @@
 # 安装
-
 ```composer require hyperf/hyperf-response```
 
 # 发布配置文件
@@ -12,7 +11,6 @@
 ```
 
 # 使用
-
 - 用hyperf-response来实现原有的`Hyperf\HttpServer\Contract\ResponseInterface`
 ```php
 // config/autoload/dependencies.php
@@ -22,7 +20,6 @@ return [
 ```
 
 - 通过依赖注入使用
-
 ```php
 namespace App\Controller;
 
@@ -33,13 +30,14 @@ class DemoController
     public function response(ResponseInterface $response)
     {
         $user = User::query()->first();
-        return $response->withData($user)->success();
+        $extra = [...额外的数据];
+        // withData可以链式追加数据
+        return $response->withData($user)->withData($extra)->success();
     }
 }
 ```
 
 - 通过`@Inject`注解使用
-
 ```php
 namespace App\Controller;
 
