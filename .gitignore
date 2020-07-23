@@ -1,0 +1,7 @@
+.buildpath
+.settings/
+.project
+.idea/
+.git/
+.DS_Store
+*.lock

@@ -12,6 +12,7 @@ declare(strict_types=1);
 namespace Invinbg\Hyperf\Response\Contract;
 
 use Hyperf\HttpServer\Contract\ResponseInterface as BaseResponseInterface;
+use Invinbg\Hyperf\Response\Response;
 use Psr\Http\Message\ResponseInterface as PsrResponseInterface;
 
 /**
