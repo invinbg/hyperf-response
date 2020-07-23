@@ -12,8 +12,8 @@ declare(strict_types=1);
 namespace Invinbg\Hyperf\Response\Contract;
 
 use Hyperf\HttpServer\Contract\ResponseInterface as BaseResponseInterface;
-use Invinbg\Hyperf\Response\Response;
 use Psr\Http\Message\ResponseInterface as PsrResponseInterface;
+use Invinbg\Hyperf\Response\Response;
 
 /**
  * Class Response.
@@ -40,6 +40,17 @@ interface ResponseInterface extends PsrResponseInterface, BaseResponseInterface
      * @return Response
      */
     public function withData($data, $override = false): Response;
+
+    /**
+     *
+     * 设置返回内容extra data值
+     *
+     * @param      $data
+     * @param bool $override
+     *
+     * @return Response
+     */
+    public function withExtraData($data, $override = false): Response;
 
     /**
      *

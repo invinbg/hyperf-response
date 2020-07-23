@@ -8,6 +8,12 @@
 ```php
 // 如果需要同步HttpStatus这里设置为true
 'withHttpStatus' => false, // sync httpStatus
+// 自定义response data 中的键名映射
+'data' => [                // data mapping
+    'code' => 'code',
+    'data' => 'data',
+    'message' => 'message'
+]
 ```
 
 # 使用
@@ -30,9 +36,14 @@ class DemoController
     public function response(ResponseInterface $response)
     {
         $user = User::query()->first();
-        $extra = [...额外的数据];
+        $data = [
+            // ...额外的数据
+        ];
+        $extra = [
+            // ...扩展数据
+        ];
         // withData可以链式追加数据
-        return $response->withData($user)->withData($extra)->success();
+        return $response->withData($user)->withData($data)->withExtraData($extra)->success();
     }
 }
 ```
