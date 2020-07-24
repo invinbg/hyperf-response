@@ -16,12 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Invinbg\\Hyperf\\Response\\": "src/"
+            "Invinbg\\HyperfResponse\\": "src/"
         }
     },
     "extra": {
         "hyperf": {
-            "config": "Invinbg\\Hyperf\\Response\\ConfigProvider"
+            "config": "Invinbg\\HyperfResponse\\ConfigProvider"
         }
     }
 }

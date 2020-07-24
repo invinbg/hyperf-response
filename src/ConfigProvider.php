@@ -8,9 +8,9 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-namespace Invinbg\Hyperf\Response;
+namespace Invinbg\HyperfResponse;
 
-use Invinbg\Hyperf\Response\Contract\ResponseInterface;
+use Invinbg\HyperfResponse\Contract\ResponseInterface;
 
 class ConfigProvider
 {

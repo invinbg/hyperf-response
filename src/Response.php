@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-namespace Invinbg\Hyperf\Response;
+namespace Invinbg\HyperfResponse;
 
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Utils\Arr;
@@ -17,7 +17,7 @@ use Hyperf\Utils\Collection;
 use Hyperf\Utils\Context;
 use Hyperf\Utils\Contracts\Arrayable;
 use Hyperf\HttpServer\Response as BaseResponse;
-use Invinbg\Hyperf\Response\Contract\ResponseInterface;
+use Invinbg\HyperfResponse\Contract\ResponseInterface;
 use Psr\Http\Message\ResponseInterface as PsrResponseInterface;
 
 class Response extends BaseResponse implements ResponseInterface

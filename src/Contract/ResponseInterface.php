@@ -9,11 +9,11 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-namespace Invinbg\Hyperf\Response\Contract;
+namespace Invinbg\HyperfResponse\Contract;
 
 use Hyperf\HttpServer\Contract\ResponseInterface as BaseResponseInterface;
 use Psr\Http\Message\ResponseInterface as PsrResponseInterface;
-use Invinbg\Hyperf\Response\Response;
+use Invinbg\HyperfResponse\Response;
 
 /**
  * Class Response.

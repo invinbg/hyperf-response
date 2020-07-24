@@ -21,7 +21,7 @@
 ```php
 // config/autoload/dependencies.php
 return [
-    Hyperf\HttpServer\Contract\ResponseInterface::class => Invinbg\Hyperf\Response\ResponseFactory::class,
+    Hyperf\HttpServer\Contract\ResponseInterface::class => Invinbg\HyperfResponse\ResponseFactory::class,
 ];
 ```
 
@@ -29,7 +29,7 @@ return [
 ```php
 namespace App\Controller;
 
-use Invinbg\Hyperf\Response\Contract\ResponseInterface;
+use Invinbg\HyperfResponse\Contract\ResponseInterface;
 
 class DemoController
 {
@@ -53,7 +53,7 @@ class DemoController
 namespace App\Controller;
 
 use Hyperf\Di\Annotation\Inject;
-use Invinbg\Hyperf\Response\Contract\ResponseInterface;
+use Invinbg\HyperfResponse\Contract\ResponseInterface;
 
 class DemoController
 {

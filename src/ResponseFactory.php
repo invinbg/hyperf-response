@@ -9,7 +9,7 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 
-namespace Invinbg\Hyperf\Response;
+namespace Invinbg\HyperfResponse;
 
 use Hyperf\Contract\ConfigInterface;
 use Psr\Container\ContainerInterface;
