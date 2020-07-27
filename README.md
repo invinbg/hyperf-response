@@ -1,5 +1,5 @@
 # 安装
-```composer require hyperf/hyperf-response```
+```composer require invinbg/hyperf-response```
 
 # 发布配置文件
 ```php bin/hyperf.php vendor:publish invinbg/hyperf-response```
